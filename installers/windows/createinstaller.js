@@ -19,6 +19,6 @@ function getInstallerConfig () {
     noMsi: true,
     outputDirectory: path.join(outPath, 'windows-installer'),
     exe: 'mixer-desktop.exe',
-    setupExe: 'MixerDesktopInstaller.exe',
+    icon: 'icons/win/icon.ico',
   })
 }

@@ -24,7 +24,6 @@
   "homepage": "https://github.com/HydeInit/Mixer-Desktop#readme",
   "devDependencies": {
     "electron": "^1.7.9",
-    "electron-winstaller": "^2.6.3",
-    "socket.io": "^2.0.4"
+    "electron-winstaller": "^2.6.3"
   }
 }

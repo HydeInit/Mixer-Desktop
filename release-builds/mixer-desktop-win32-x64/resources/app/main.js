@@ -7,11 +7,13 @@ const url = require('url')
 let mainWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden'})
+  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden', icon:'./icons/win/icon.ico'})
     
   mainWindow.loadURL('https://mixer.com/',
     {webPreferences: {javascript: true}});
-
+    
+  //mainWindow.webContents.openDevTools()
+    
   mainWindow.on('closed', function () {
     mainWindow = null
   })
@@ -20,7 +22,7 @@ function createWindow () {
 MixerDesktop.on('ready', createWindow)
 
 MixerDesktop.on('window-all-closed', function () {
-  if (process.platform !== 'darwin') {
+  if (process.platform !== 'win32') {
     app.quit()
   }
 })
