@@ -8,8 +8,8 @@ const url = require('url')
 let mainWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden'})
-  
+  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden', icon:'./icons/mixer.png'})
+    
   mainWindow.loadURL('https://mixer.com/',
     {webPreferences: {javascript: true}});
     
