@@ -1,4 +1,5 @@
 const electron = require('electron')
+const io = require('socket.io')
 const MixerDesktop = electron.app
 const BrowserWindow = electron.BrowserWindow
 const path = require('path')
@@ -8,10 +9,12 @@ let mainWindow
 
 function createWindow () {
   mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden'})
-    
+  
   mainWindow.loadURL('https://mixer.com/',
     {webPreferences: {javascript: true}});
-
+    
+  mainWindow.webContents.openDevTools()
+    
   mainWindow.on('closed', function () {
     mainWindow = null
   })
@@ -20,7 +23,7 @@ function createWindow () {
 MixerDesktop.on('ready', createWindow)
 
 MixerDesktop.on('window-all-closed', function () {
-  if (process.platform !== 'darwin') {
+  if (process.platform !== 'win32') {
     app.quit()
   }
 })
