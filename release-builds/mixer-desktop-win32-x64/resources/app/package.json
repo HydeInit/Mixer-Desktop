@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ColinMoulds/Mixer-Desktop.git"
+    "url": "git+https://github.com/HydeInit/Mixer-Desktop.git"
   },
   "keywords": [
     "mixer",
@@ -16,12 +16,12 @@
     "client",
     "native"
   ],
-  "author": "Colin Moulds",
+  "author": "HydeInit",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ColinMoulds/Mixer-Desktop/issues"
+    "url": "https://github.com/HydeInit/Mixer-Desktop/issues"
   },
-  "homepage": "https://github.com/ColinMoulds/Mixer-Desktop#readme",
+  "homepage": "https://github.com/HydeInit/Mixer-Desktop#readme",
   "devDependencies": {
     "electron": "^1.7.9",
     "electron-winstaller": "^2.6.3"
