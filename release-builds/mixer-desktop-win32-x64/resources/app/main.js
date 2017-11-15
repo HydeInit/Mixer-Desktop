@@ -1,3 +1,7 @@
+const setupEvents = require('./installers/setupEvents')
+ if (setupEvents.handleSquirrelEvent()) {
+    return;
+ }
 const electron = require('electron')
 const MixerDesktop = electron.app
 const BrowserWindow = electron.BrowserWindow
@@ -7,7 +11,7 @@ const url = require('url')
 let mainWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden', icon:'./icons/win/icon.ico'})
+  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden', icon:'./icons/win/icon-app.ico'})
     
   mainWindow.loadURL('https://mixer.com/',
     {webPreferences: {javascript: true}});
