@@ -36,3 +36,10 @@ MixerDesktop.on('activate', function () {
     createWindow()
   }
 })
+
+MixerDesktop.on('closed', function () {
+    mainWindow = null
+    app.quit()
+    return
+    quit ()
+})
