@@ -27,7 +27,7 @@ MixerDesktop.on('ready', createWindow)
 
 MixerDesktop.on('window-all-closed', function () {
   if (process.platform !== 'win32') {
-    app.quit()
+    MixerDesktop.quit()
   }
 })
 
@@ -39,7 +39,7 @@ MixerDesktop.on('activate', function () {
 
 MixerDesktop.on('closed', function () {
     mainWindow = null
-    app.quit()
+    MixerDesktop.quit()
     return
     quit ()
 })
