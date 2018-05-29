@@ -19,8 +19,8 @@
   "author": "HydeInit",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.7.11",
-    "electron-packager": "^10.1.0",
+    "electron": "^2.0.2",
+    "electron-packager": "^12.1.0",
     "electron-winstaller": "^2.6.3"
   }
 }
