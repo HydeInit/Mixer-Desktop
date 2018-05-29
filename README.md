@@ -10,9 +10,6 @@ The [Electron](https://github.com/electron) framework aloud us to write a cross-
 [Mixer](https://github.com/mixer)
 using [NodeJS](https://github.com/nodejs).
 
-Follow [@HydeInit](https://twitter.com/HydeInit) on Twitter for important
-announcements.
-
 This project adheres to the Contributor Covenant 
 [code of conduct](https://github.com/HydeInit/Mixer-Desktop/blob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable
@@ -28,6 +25,9 @@ cd Mixer-Desktop
 npm install
 npm start
 ```
+## Help wanted!
+
+We are looking for developers to help develop this project to present to the official team at mixer. Please submit some ideas in the issues section or some PRs to get this project going. If you are interested, you can become a collaborator on the project. Thanks.
 
 ## License
 
