@@ -11,10 +11,13 @@ const url = require('url')
 let mainWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden', icon:'./icons/win/icon-app.ico'})
+  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle: 'hidden', icon:'./icons/win/icon-app.ico', backgroundColor: '#141828', webPreferences: {
+      nodeIntegration: false,
+      preload: ''
+    }})
     
-  mainWindow.loadURL('https://mixer.com/',
-    {webPreferences: {javascript: true}});
+  mainWindow.loadURL('https://mixer.com/users/login')
+  mainWindow.setMenu(null)
     
   //mainWindow.webContents.openDevTools()
     
