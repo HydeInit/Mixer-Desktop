@@ -13,8 +13,19 @@ let mainWindow
 function createWindow () {
   mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle: 'hidden', icon:'./icons/win/icon-app.ico', backgroundColor: '#141828', webPreferences: {
       nodeIntegration: false,
-      preload: ''
+      preload: '',
+      nativeWindowOpen: true,
     }})
+
+  // Child window open event handler
+  mainWindow.webContents.on('new-window', (event, url, frameName, disposition, options, additionalFeatures) => {
+    event.preventDefault()
+    Object.assign(options, {
+      parent: mainWindow
+    })
+    event.newGuest = new BrowserWindow(options)
+    event.newGuest.setMenu(null)
+  })
     
   mainWindow.loadURL('https://mixer.com/users/login')
   mainWindow.setMenu(null)
