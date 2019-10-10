@@ -55,5 +55,4 @@ MixerDesktop.on('closed', function () {
     mainWindow = null
     MixerDesktop.quit()
     return
-    quit ()
 })
