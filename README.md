@@ -1,4 +1,4 @@
-## Mixer-Desktop
+# Mixer-Desktop
 
 [![Travis Build Status](https://api.travis-ci.org/HydeInit/Mixer-Desktop.svg?branch=master)](https://travis-ci.org/HydeInit/Mixer-Desktop)
 [![devDependencies Status](https://david-dm.org/HydeInit/Mixer-Desktop/dev-status.svg)](https://david-dm.org/HydeInit/Mixer-Desktop?type=dev)
