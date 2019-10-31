@@ -6,7 +6,7 @@
 
 :memo: Available Translations: coming soon
 
-The [Electron](https://github.com/electron) framework aloud us to write a cross-platform desktop application for
+The [Electron](https://github.com/electron) framework allowed us to write a cross-platform desktop application for
 [Mixer](https://github.com/mixer)
 using [NodeJS](https://github.com/nodejs).
 
