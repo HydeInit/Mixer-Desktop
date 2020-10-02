@@ -11,7 +11,7 @@ const url = require('url')
 let mainWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden', icon:'./icons/win/icon-app.ico'})
+  mainWindow = new BrowserWindow({width: 1280, height: 720, titleBarStyle:'hidden', icon:'./icons/win/icon-app.ico'});
     
   mainWindow.loadURL('https://mixer.com/',
     {webPreferences: {javascript: true}});
@@ -19,7 +19,7 @@ function createWindow () {
   //mainWindow.webContents.openDevTools()
     
   mainWindow.on('closed', function () {
-    mainWindow = null
+    mainWindow = null;
   })
 }
 
@@ -27,19 +27,18 @@ MixerDesktop.on('ready', createWindow)
 
 MixerDesktop.on('window-all-closed', function () {
   if (process.platform !== 'win32') {
-    MixerDesktop.quit()
+    MixerDesktop.quit();
   }
 })
 
 MixerDesktop.on('activate', function () {
   if (mainWindow === null) {
-    createWindow()
+    createWindow();
   }
 })
 
 MixerDesktop.on('closed', function () {
-    mainWindow = null
-    MixerDesktop.quit()
-    return
-    quit ()
+    mainWindow = null;
+    MixerDesktop.quit();
+    return;
 })
